@@ -1,1 +1,10 @@
+body {
+    background: url(../img/pomodor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+h1 {
+    margin-left: 5%;
+    margin-top: 5%;
+}
