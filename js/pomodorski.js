@@ -4,21 +4,21 @@ var resetButton = document.getElementById("reset");
 var minsLeft = document.getElementById("mins-left");
 var secsLeft = document.getElementById("secs-left");
 
-var start = function() {
+function start() {
     console.log("start");
     begin = setInterval(countdown, 1000); // Call countdown function every 1000 milliseconds
     startButton.disabled = true;
     stopButton.disabled = false;
 }
 
-var pause = function() {
+function stop() {
     console.log("pause");
     window.clearInterval(begin) // clear the timer and so stop the clock
     stopButton.disabled = true;
     startButton.disabled = false;
 }
 
-var reset = function() {
+function reset() {
     console.log("reset");
     window.clearInterval(begin) // clear the timer and so stop the clock
     secsLeft.innerText = 00;
