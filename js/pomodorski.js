@@ -1,5 +1,5 @@
 var startButton = document.getElementById("start");
-var pauseButton = document.getElementById("pause");
+var stopButton = document.getElementById("pause");
 var resetButton = document.getElementById("reset");
 var minsLeft = document.getElementById("mins-left");
 var secsLeft = document.getElementById("secs-left");
