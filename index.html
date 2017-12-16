@@ -9,7 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="css/pomodorski.css">
-    
 </head>
 
 <body>
@@ -17,14 +16,13 @@
         <h1>Srecan rad!</h1>
     </header>
     <main>
-       
         <p> Da pokrenes tajmer, klikni na zeleni paradajz. </p>
-            <p>Da osvezis tajmer, klikni na crveni paradajz.</p>
+        <p>Da osvezis tajmer, klikni na crveni paradajz.</p>
         <p>Ako hoces na pauzu, klikni na kitkat.</p>
         <p>
-            <button id="start" onclick="start()"><img src="img/images.png"></button>
-            <button id="reset" onclick="reset()"><img src="img/tomato.jpeg"></button>
-            <button id="pause" onclick="stop()"><img src="img/kitkat.png"></button>
+            <button class="button start" id="start" onclick="start()"><img src="img/images.png"></button>
+            <button class="button reset" id="reset" onclick="reset()"><img src="img/tomato.jpeg"></button>
+            <button class="button stop" id="stop" onclick="stop()"><img src="img/kitkat.png"></button>
         </p>
         <div id="timer">
             <div class="clock"><span id="mins-left">25</span>m <span id="secs-left">00</span>s
@@ -32,12 +30,12 @@
     </main>
     <footer>
     </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/pomodorski.js" type="text/javascript"></script>
 </body>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script src="js/pomodorski.js" type="text/javascript"></script>
 
 </html>

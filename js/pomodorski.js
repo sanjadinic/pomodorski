@@ -1,5 +1,5 @@
 var startButton = document.getElementById("start");
-var stopButton = document.getElementById("pause");
+var stopButton = document.getElementById("stop");
 var resetButton = document.getElementById("reset");
 var minsLeft = document.getElementById("mins-left");
 var secsLeft = document.getElementById("secs-left");
@@ -22,13 +22,12 @@ function reset() {
     console.log("reset");
     window.clearInterval(begin) // clear the timer and so stop the clock
     secsLeft.innerText = 00;
-    minsLeft.innerText = document.getElementById("mins").innerText;
+    minsLeft.innerText = 25;
     stopButton.disabled = true;
     startButton.disabled = false;
 }
-
 // This is what makes the clock tick downwards
-var countdown = function() {
+function countdown() {
     console.log("countdown");
     if (secsLeft.innerText <= 0) {
         secsLeft.innerText = 60;
